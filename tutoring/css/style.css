@@ -1,0 +1,444 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  box-shadow: 0px -10px 50px #000;
+  background-color: #dde;
+}
+
+ul.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  outline: none !important;
+}
+
+nav .navbar-brand {
+  padding: 0;
+}
+
+nav a {
+  color: black!important;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: rgb(112, 223, 112) !important;
+}
+
+#introbox {
+  height: calc(100vh - 56px);
+  margin-top: 56px;
+  overflow: hidden;
+  position: relative;
+  display:flex;
+}
+
+#introbox div.headers {
+  color: white;
+  padding: 0 8vw;
+  width: 100%;
+}
+
+#introbox div.headers h1 {
+  font-weight: bold;
+}
+
+@supports (-webkit-text-stroke: 2px white) {
+  .headers h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: none;
+  }
+}
+
+#introImg {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  height:100%;
+  width:100%;
+  opacity: .5;
+}
+
+
+.headers {
+  z-index: 2;
+  text-align: center;
+  align-self: center;
+}
+
+.gglass {
+  position: absolute;
+  background: rgba(0, 138, 18, 0.8);
+  z-index:1;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .headers h1 {
+    font-size: 4.2vw;
+  }
+  .headers h2 {
+    font-size: 2.6vw;
+  }
+  .headers p {
+    font-size: 1.6vw;
+  }
+}
+
+#introbox div.headers h2 {
+  margin-top: 10px;
+}
+
+#introbox div.headers p {
+  margin-top: 10px;
+}
+
+#particles-js {
+  background: black;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.textbox {
+  padding: 15px 15px;
+  padding-bottom:30px;
+  margin: 0 3vw;
+  box-shadow: 0 0 20px 1px #111;
+  background: rgba(255, 255, 255, 0.75);
+  color: #333;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+
+
+.textbox:first-child{
+  margin-top:60px;
+}
+
+
+.formbox {
+  color: white;
+  text-align: center;
+  padding: 100px 8vw;
+  margin-bottom: 30px;
+}
+
+.btn-miau {
+  box-shadow: none !important;
+
+  color: white;
+
+  background: linear-gradient(
+    to right,
+    rgba(58, 223, 15, 1) 50%,
+    transparent 50%
+  );
+  transition: background 0.6s;
+  background-size: 210% 100%;
+  background-position: right;
+  font-weight: bold;
+  padding: 12px 0;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #3adf0f;
+  border-radius: 50px;
+}
+
+
+.btn-miau-nav {
+  background-image: linear-gradient(to right, lightgreen 50%, transparent 50%);
+  border-color: lightgreen;
+  color: black;
+}
+
+.btn-miau:hover {
+  background-position: left;
+}
+
+.modal-content {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.modal-full {
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.modal-backdrop {
+  background-color: #04132f;
+}
+
+.modal-backdrop.show {
+  opacity: 0.95;
+}
+
+#modalJoin input,
+#modalJoin textarea {
+  background: transparent !important;
+  color: lightskyblue;
+}
+
+#info .form-group {
+  max-width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#quiz h5,
+#quiz img {
+  margin-top: 30px;
+}
+
+#quiz h2 {
+  margin-top: 50px;
+}
+
+#quiz .row,
+#quiz p {
+  margin-bottom: 25px;
+}
+
+form h2 {
+  text-align: center;
+}
+
+#quiz {
+  margin: 0 5vw;
+}
+
+#quiz h2 {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+#quiz img {
+  border-radius: 8px;
+}
+
+#quiz textarea {
+  margin-bottom: 100px;
+}
+
+#quiz .czekk {
+  color: lightskyblue;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+#accor {
+  padding: 0 4vw;
+  padding-bottom: 150px;
+}
+
+.faqh {
+  border: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px 20px;
+  margin-bottom: 6px;
+}
+
+
+#accor .collapse,
+#accor .collapsing {
+  color: white !important;
+  padding: 0 !important;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.collapse p,
+.collapsing p {
+  margin-bottom: 0;
+  padding: 10px 20px;
+}
+
+.faqh h5 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.titlexd {
+  color: #3adf0f;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.timelinebox {
+  color: white;
+  font-weight: bold;
+  padding-left: 15%;
+  padding-right: 15%;
+  background: rgba(255, 255, 255, 0.084);
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+
+  margin-bottom: 100px;
+}
+
+.trow {
+  border-top: 7px double;
+  border-color: #3adf0f !important;
+  margin: 0;
+  padding: 50px 0;
+  font-weight: 700 !important;
+}
+
+.trow::before {
+  /* box-sizing: content-box; */
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: #3adf0f;
+  border-radius: 50%;
+  border: 7px solid  #151515;
+}
+
+.trow:nth-child(odd)::before {
+  left: calc(15% - 13px);
+}
+
+.trow:nth-child(even)::before {
+  right: calc(15% - 13px);
+}
+
+.trow:nth-child(odd) {
+  border-left: 7px double;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: 20px;
+  padding-left: 50px;
+}
+
+.trow:nth-child(even) {
+  border-right: 7px double;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 20px;
+  text-align: right;
+  padding-right: 50px;
+}
+
+@media all and (min-width: 992px) {
+  .trow {
+    padding: 100px 0;
+  }
+
+  .trow:nth-child(odd) {
+    padding-left: 100px;
+  }
+
+  .trow:nth-child(even) {
+    padding-right: 100px;
+  }
+}
+
+.formbox2 {
+  color: white;
+}
+
+.formbox2 .form-control {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: none !important;
+  transition: 0.3s;
+  color: white !important;
+}
+
+.formbox2 p {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 80%;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.formbox2 .form-group {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.formbox2 .form-control:focus,
+.formbox2 .form-control:hover {
+  background: inherit;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.formbox2 .form-control:focus {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.formbox2 .btn-miau {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.ifrejm {
+  display: block;
+  border: none;
+  background: transparent;
+  height: 100px;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.contactbox {
+  color: white;
+  background: rgba(255, 255, 255, 0.18);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+  padding: 100px 10vw;
+}
+
+.contactbox div {
+  margin-bottom: 50px;
+}
+
+.jumpPoint {
+  position: relative;
+  top: -80px;
+}
+
+.nav-link:hover,
+.btn-miau:hover,
+.faqh:hover {
+  cursor: pointer;
+}
+
+li .btn-miau {
+  height: 40px;
+  width: 150px;
+  padding: 0;
+}

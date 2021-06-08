@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+  <!-- Facebook Pixel Code -->
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '461004754530863');
+  fbq('track', 'PageView');
+</script>
+
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=461004754530863&ev=PageView&noscript=1"/>
+</noscript>
+
+  <!-- End Facebook Pixel Code -->
+
+</head>
+
+
+<body>
+
+	<div id="particles-js"></div>
+
+	<nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar" style="background:white">
+		<a class="navbar-brand" href="#">
+			<a  href="https://meetit.pl"><img src="img/meetit.svg" style="height:40px"></a>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+
+				<li class="nav-item">
+					<a class="nav-link" href="#pfaq">FAQ</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#ptime">Oś czasu</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#pcontact">Kontakt</a>
+				</li>
+
+				<li>
+					<button class="btn-miau btn-miau-nav" data-toggle="modal" data-target="#modalJoin">
+						Dołącz do nas!
+					</button>
+				</li>
+
+				<li>
+					<a href="https://meetit.eu/tutoring" style="height:40px!important"><img style="height:30px;margin:5px 0" src="../gb.svg"></a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+
+
+
+	<div id="introbox">
+
+
+		<video muted autoplay loop playsinline id="introImg" src="img/vid.mp4"></video>
+		<div class="gglass"></div>
+		<div data-aos="fade-up" class="headers">
+			<h1>Tutoring</h1>
+			<h2>Be a part of the Network</h2>
+			<p>
+				Zapisz się na tutoring, stań się częścią samouczącej się sieci olimpijczyków i osiągnij sukces.
+			</p>
+		</div>
+	</div>
+
+	</div>
+	<div>
+		<div class="textbox" data-aos="fade-down">
+			<p>Po wypełnieniu formularza zgłoszeniowego zaczniesz naukę od pracy w grupie. Na tym etapie
+				zapoznasz się ze
+				składnią C++ i pod­sta­wo­wy­mi algorytmami. Jeżeli informatyka sta­nie się Twoją pasją i wykażesz się
+				za­an­ga­żo­wa­niem, zostanie Ci przydzielony in­dy­wi­du­al­ny tutor, który dostosuje dalsze działania do Twoich
+				indywidualnych potrzeb, zaangażowania i chęci.</p>
+		</div>
+
+		<div class="textbox" data-aos="fade-down">
+			<p>Tutorami są młodzi programiści, laureaci ogólnopolskich i międzynarodowych olimpiad
+				informatycznych. Ich celem
+				jest przekazać Ci swoją wiedzę oraz rozwinąć Twoje umiejętności. Tutorzy podchodzą do każdego in­dy­wi­du­al­nie.
+				Zarówno sposób ko­mu­ni­ko­wa­nia się, jak i poziom zadań, zależą od Twoich preferencji, możliwości oraz celów.</p>
+		</div>
+
+
+		<div class="textbox" data-aos="fade-down">
+			<p>Jeśli już zajmujesz się informatyką, zostań tutorem i podziel się swoją pasją z innymi! Nie
+				wahaj się do nas
+				napisać. Kontaktując się z nami na pewno nic nie stracisz, a być może pomożesz komuś, przy okazji rozwijając swoje
+				interpersonalne umiejętności niezbędne w życiu zawodowym.</p>
+		</div>
+	</div>
+	<div class="formbox">
+
+		<button class="btn-miau" data-toggle="modal" data-target="#modalJoin">
+			Dołącz do nas!
+		</button>
+	</div>
+
+	<div class="modal fade" id="modalJoin" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-full" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white; text-align:right; margin-right:5px">
+					<span aria-hidden="true">X</span>
+				</button>
+				<div class="modal-body">
+					<form method="POST" action='submit.php' target="sfsfsf">
+						<div id="info">
+							<h2>Informacje o Tobie</h2>
+							<div class="form-group">
+								<label for="name">Imię:</label>
+								<input type="text" name="name" class="form-control" placeholder="Twoje imię" required>
+							</div>
+
+							<div class="form-group">
+								<label for="surname">Nazwisko:</label>
+								<input type="text" name="surname" class="form-control" placeholder="Twoje nazwisko" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email:</label>
+								<input type="email" name="email" class="form-control" placeholder="np. example@example.com" required>
+							</div>
+
+							<div class="form-group">
+								<label for="fb">Facebook:</label>
+								<input type="text" name="fb" class="form-control" placeholder="Link do profilu na Facebooku" required>
+							</div>
+
+							<div class="form-group">
+								<label for="q1">Szkoła:</label>
+								<input type="text" name="q1" class="form-control" placeholder="Twoja szkoła" required>
+							</div>
+
+							<div class="form-group">
+								<label for="q2">Klasa:</label>
+								<input type="text" name="q2" class="form-control" placeholder="Twoja klasa" required>
+							</div>
+						</div>
+
+
+
+						<div id="quiz">
+							<h4 style="margin-bottom:50px; margin-top:100px">Napisz kilka słów o sobie</h4>
+							<textarea type="text" name="q0" class="form-control" rows="6" placeholder=":"></textarea>
+
+							<h2>Krótki QUIZ :)</h2>
+
+							<h5>Zadanie 1</h5>
+							<p>Mamy dostępne tylko monety o nominałach 1, 2, 4, 8, ... , (zł). Kasjerka chciałaby nam wydać kwotę 29
+								złotych - ile minimalnie monet potrzebujemy, aby dało się przeprowadzić transakcję? </p>
+							<textarea type="text" name="q3" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+
+
+							<div class="row">
+								<div class="col-md-7">
+									<h5>Zadanie 2</h5>
+									<p>Twoja podłoga ma kształt szachownicy 8x8 bez dwóch narożnych pól, tak jak na rysunku. Chciałbyś zmienić
+										wystrój podłogi i wyłożyć ją prostokątnymi kafelkami 2x1. Czy można to zrobić?</p>
+								</div>
+								<div class="col-md-5" style="text-align:center">
+									<img src="img/chessboard.png" style="height:200px">
+								</div>
+							</div>
+							<textarea type="text" name="q4" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+
+
+							<h5>Zadanie 3</h5>
+							<p>Jaka jest cyfra jedności liczby 3^2018?</p>
+							<textarea type="text" name="q5" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+
+							<h5>Zadanie 4</h5>
+							<p>Przed Maką i Paką stoi szachownica, taka jak w zadaniu 2. Będą układać koniki szachowe tak, aby żadne dwa
+								nie atakowały się. Zaczyna Maka. Przegrywa ten, kto nie może wykonać ruchu. Zarówno Maka, jak i Paka, są
+								arcymistrzami w tę grę. Kto wygra?</p>
+							<textarea type="text" name="q6" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+
+							<div class="row">
+								<div class="col-md-7">
+									<h5>Zadanie 5</h5>
+									<p>Ile jest trójkątów, których wierzchołkami są te punkty:</p>
+								</div>
+								<div class="col-md-5" style="text-align: center">
+									<img src="img/points.png" style="height:200px">
+								</div>
+							</div>
+							<textarea type="text" name="q7" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+							<div class="row">
+								<div class="col-md-7">
+									<h5>Zadanie 6</h5>
+									<p>Mamy kilka miast, między którymi jeszcze nie ma dróg. Są za to plany widoczne na rysunku - liczby na
+										drogach mówią nam, jaki jest koszt ich wybudowania. Jaki jest koszt wybudowania dróg tak, żeby między
+										każdą parą miast dało się przejechać? Które drogi wybrać?
+									</p>
+								</div>
+								<div class="col-md-5" style="text-align:center">
+									<img src="img/graph.png" style="height:200px">
+								</div>
+							</div>
+							<textarea type="text" name="q8" class="form-control" rows="4" placeholder="Odpowiedź"></textarea>
+
+
+							<p class="czekk">
+								<input class="czekbox" type="checkbox" value="" required>
+								&nbsp;
+								Wyrażam zgodę na przetwarzanie i wykorzystywanie moich danych osobowych w zakresie niezbędnym do
+								partycypacji
+								w kursie "Tutoring" i działalności fundacji Meet IT z siedzibą w Gdyni ul. Lipowa 4c/13, która jest
+								administratorem udostępnionych przeze mnie danych (zgodnie z art.13 ogólnego rozporządzenia o ochronie danych
+								osobowych z dnia 27 kwietnia 2016 roku; Dz. Urz. UE L 199 z dnia 04.05.2016).
+								Zostałem poinformowany, że podanie moich danych jest dobrowolne i przysługuje mi prawo do żądania od
+								administratora dostępu do moich danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania,
+								wniesienia sprzeciwu wobec przetwarzania danych, przenoszenia danych oraz prawo do cofnięcia zgody.
+								Podanie danych osobowych jest niezbędne do zgłoszenia uczestnika i dalszego bezproblemowego uczestnictwa.
+								Usunięcie danych na prośbę uczestnika jest jednoznaczne z rezygnacją z udziału w kursie.
+							</p>
+							<!-- </label> -->
+							<!-- </div> -->
+							<div style="text-align:right">
+								<button type="submit" class="btn-miau">Wyślij</button>
+							</div>
+
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="jumpPoint" id="pfaq"></div>
+
+	<h1 class="titlexd" data-aos="zoom-in">FAQ</h1>
+
+	<div id="accor">
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer1" type="button">
+			<h5>Kto może skorzystać z tutoringu?</h5>
+		</button>
+		<div id="answer1" class="collapse" data-parent="#accor">
+			<p>Każdy. Zapraszamy do wypełnienia formularza zgłoszeniowego znajdującego się na tej stronie</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer2" type="button">
+			<h5>Jak przebiega nauka?</h5>
+		</button>
+		<div id="answer2" class="collapse" data-parent="#accor">
+			<p>Po otrzymaniu Twojego zgłoszenia skontaktujemy się z Tobą. Jeśli dopiero zaczynasz swoją przygodę z informatyką,
+				zaczniesz od nauki podstaw C++ i algorytmiki w niewielkiej grupie pod okiem jednego z naszych tutorów. Jeśli
+				pomyślnie przejdziesz ten etap lub nie będziesz go potrzebował, przydzielimy Ci tutora. Poziom, sposób komunikacji
+				i częstotliwość Waszej pracy zależy wyłącznie od Twoich ambicji, umiejętności i zaangażowania.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer3" type="button">
+			<h5>Kim są tutorzy?</h5>
+		</button>
+		<div id="answer3" class="collapse" data-parent="#accor">
+			<p>Tutorzy to młodzi pasjonaci informatyki - laureaci oraz finaliści olimpiad krajowych i międzynarodowych.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer4" type="button">
+			<h5>Nie interesuje mnie udział w olimpiadach informatycznych. Czy mogę skorzystać z Waszego tutoringu?</h5>
+		</button>
+		<div id="answer4" class="collapse" data-parent="#accor">
+			<p>Tak. Nasz program nauczania dostosowany jest do indywidualnych potrzeb uczestników. Zajmujemy się przede
+				wszystkim nauką programowania i algorytmiki od podstaw, ale dołożymy wszelkich starań, żeby pomóc każdemu,
+				kto się do nas zgłosi.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer5" type="button">
+			<h5>Czy korzystanie z Kompendium jest bezpłatne?</h5>
+		</button>
+		<div id="answer5" class="collapse" data-parent="#accor">
+			<p>Tak. Każdy może go używać bez przeszkód.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer6" type="button">
+			<h5>Jestem nauczycielem. Czy mogę korzystać z Kompendium?</h5>
+		</button>
+		<div id="answer6" class="collapse" data-parent="#accor">
+			<p>Jak najbardziej! Projekt jest skierowany przeważnie w stronę młodzieży, ale cieszy nas zainteresowanie każdego.
+				Jeśli uznasz nasze materiały za użyteczne, koniecznie powiedz o nich swoim uczniom.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer7" type="button">
+			<h5>Myślę, że znalazłem błąd w Kompendium. Co powinienem zrobić?</h5>
+		</button>
+		<div id="answer7" class="collapse" data-parent="#accor">
+			<p>Będziemy bardzo wdzięczni za wiadomość na adres contact@meetit.eu. Staramy się, aby Kompendium było jak
+				najlepsze, ale jesteśmy tylko ludźmi.</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer8" type="button">
+			<h5>Co mogę zyskać, dołączając do Waszego projektu jako tutor?</h5>
+		</button>
+		<div id="answer8" class="collapse" data-parent="#accor">
+			<p>Możemy podzielić się z Tobą satysfakcją z wkładu w rozwój podopiecznych. Jeśli chodzi o bardziej wymierne
+				korzyści, oferujemy oficjalnie poświadczone godziny wolontariatu oraz certyfikaty, co przydaje się podczas
+				aplikacji o stypendia, na studia lub staże. Możliwość rozwinięcia swoich umiejętności z zakresu komunikacji
+				interpersonalnej i przekazywania wiedzy również wydaje się warta rozważenia.
+			</p>
+		</div>
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer9" type="button">
+			<h5>Chciałbym, żebyście przyjechali do mojej szkoły. Czy to możliwe?</h5>
+		</button>
+		<div id="answer9" class="collapse" data-parent="#accor">
+			<p>Co jakiś czas wyjeżdżamy na “trasę koncertową”, podczas której odwiedzamy placówki edukacyjne na terenie całego
+				kraju. Dobrym pomysłem jest napisanie e-maila na kontakt@meetit.pl. Zobaczymy, co da się zrobić :)</p>
+		</div>
+
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer10" type="button">
+			<h5>Czy mogę Wam jakoś pomóc?</h5>
+		</button>
+		<div id="answer10" class="collapse" data-parent="#accor">
+			<p>Oczywiście. Zbieramy fundusze na naszą działalność, szukamy tutorów i chętnych do współpracy. Z wdzięcznością
+				przyjmujemy każdą pomoc w tym zakresie. Zapraszamy do kontaktu.</p>
+		</div>
+
+
+		<button data-aos="zoom-in-up" class="faqh" data-toggle="collapse" data-target="#answer11" type="button">
+			<h5>W jaki sposób można się z Wami skontaktować?</h5>
+		</button>
+		<div id="answer11" class="collapse" data-parent="#accor">
+			<p>W jakiejkolwiek sprawie możesz się do nas zwrócić przechodząc na sam dół tej strony.</p>
+		</div>
+
+
+	</div>
+
+	<div class="jumpPoint" id="ptime"></div>
+
+	<h1 class="titlexd" data-aos="zoom-in">Oś czasu</h1>
+	<div class="timelinebox">
+		<div class="trow trow1">
+			<div data-aos="fade-right">
+				<h4>Sierpień 2017</h4>
+				<p>Początki projektu</p>
+			</div>
+		</div>
+
+		<div class="trow trow2">
+			<div data-aos="fade-left">
+				<h4>Październik 2017</h4>
+				<p>Pierwsza setka uczniów</p>
+			</div>
+		</div>
+
+		<div class="trow trow3">
+			<div data-aos="fade-right">
+				<h4>Luty 2018</h4>
+				<p>Trzy pierwsze trasy konferencyjne po szkołach w zachodniej Polsce</p>
+			</div>
+		</div>
+
+		<div class="trow trow4">
+			<div data-aos="fade-left">
+				<h4>Marzec 2018</h4>
+				<p>Liczba uczniów przekroczyła 300</p>
+			</div>
+		</div>
+
+		<div class="trow trow5">
+			<div data-aos="fade-right">
+				<h4>Kwiecień 2018</h4>
+				<p>Trasa po szkołach z centralnej Polski</p>
+			</div>
+		</div>
+
+		<div class="trow trow6">
+			<div data-aos="fade-left">
+				<h4>Czerwiec 2018</h4>
+				<p>Nagroda za najlepszy projekt edukacyjny według społeczności Social Wolves</p>
+			</div>
+		</div>
+
+		<div class="trow trow7">
+			<div data-aos="fade-right">
+				<h4>Wrzesień 2018</h4>
+				<p>Getting international</p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="jumpPoint" id="pcontact"></div>
+
+	<div class="formbox2">
+		<h1 class="titlexd" data-aos="zoom-in">Napisz do nas!</h1>
+		<p data-aos="fade-up">Masz pytanie, pomysł na projekt lub chcesz zgłosić usterkę? Skontaktuj się z nami!
+			Twój feedback pozwala nam się rozwijać!</p>
+
+
+		<form method="POST" action="submit.php" target="ifrejm">
+			<div class="form-group" data-aos="fade-up">
+				<label for="email">Adres email</label>
+				<input type="email" name="email" class="form-control" placeholder="Twój email" required>
+			</div>
+
+			<div class="form-group" data-aos="fade-up">
+				<label for="message">Wiadomość:</label>
+				<textarea type="text" name="message" class="form-control" placeholder='Opcjonalny feedback :)' row="2"></textarea>
+			</div>
+
+			<button type="submit" class="btn-miau">Wyślij</button>
+
+		</form>
+		<iframe name="ifrejm" class="ifrejm">
+
+		</iframe>
+	</div>
+
+
+
+
+	<div class="contactbox">
+		<div>
+			&copy; 2018 - Fundacja Meet IT. <br>
+			Wszelkie prawa zastrzeżone.
+		</div>
+		<div class="contact">
+			contact@meetit.eu <br>
+			(+48) 512 682 445
+		</div>
+	</div>
+
+
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/others.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script type="text/javascript">
+		AOS.init({
+			duration: 1000,
+		});
+	</script>
+</body>
+
+</html>
