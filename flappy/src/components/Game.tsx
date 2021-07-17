@@ -1,4 +1,4 @@
-import React, {useEffect, useReducer, useState} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import {Obstacle, Vec2} from '../utility';
 import Grid from './Grid';
 
@@ -12,19 +12,24 @@ type Action = {
 };
 
 const reducer = (state: State, action: Action): State => {
+    console.log('move');
     const newObstacles = state.obstacles.map((obstacle) => {
-        obstacle.col -= 1;
-        return obstacle;
+        const newObstacle = {...obstacle};
+        newObstacle.col -= 1;
+        return newObstacle;
     });
+    let newPosition: Vec2;
     switch (action.type) {
         case 'moveUp':
+            newPosition = new Vec2(state.position.row - 1, state.position.col);
             return {
-                position: new Vec2(state.position.row - 1, state.position.col),
+                position: newPosition,
                 obstacles: newObstacles
             };
         case 'moveDown':
+            newPosition = new Vec2(state.position.row + 1, state.position.col);
             return {
-                position: new Vec2(state.position.row + 1, state.position.col),
+                position: newPosition,
                 obstacles: newObstacles
             };
         default:
@@ -34,13 +39,14 @@ const reducer = (state: State, action: Action): State => {
 
 const Game: React.FC = () => {
     const initialObstacles: Obstacle[] = [
+        {col: 6, height: 5, side: 'top'},
         {col: 6, height: 3, side: 'bottom'},
         {col: 8, height: 4, side: 'top'},
-        {col: 8, height: 2, side: 'bottom'}
+        {col: 8, height: 4, side: 'bottom'}
     ];
 
     const initialState: State = {
-        position: new Vec2(3, 3),
+        position: new Vec2(3, 1),
         obstacles: initialObstacles
     };
 
@@ -58,7 +64,6 @@ const Game: React.FC = () => {
         document.addEventListener('keydown', moveHandler);
         return () => document.removeEventListener('keydown', moveHandler);
     });
-
     return <Grid position={state.position} obstacles={state.obstacles} />;
 };
 
